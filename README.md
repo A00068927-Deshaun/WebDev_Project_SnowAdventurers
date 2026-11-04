@@ -1,0 +1,1 @@
+I want to create a website that showcases snowboarding & other winter sports, for example bob sledding & sking, lalso want my website to b a hub of information that allows my clients to access information about their desired destinations: lodging, activities, fees & entertainment, and the founder Lucas Snow.
