@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Our Founder | Snow Trails</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ACCESSIBILITY (Dyslexia): Removed 'Quantico' font so the page uses clean sans-serif fonts -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="about-page">
-    <nav class="site-nav">
+    <!-- ACCESSIBILITY (Autism/Neurodiverse): Consistent navigation layout across pages -->
+    <nav class="site-nav" aria-label="Main Navigation">
         <ul>
             <li><a href="WebDev_LucasSnow.html">Home</a></li>
             <li><a href="about.html">About our founder</a></li>
@@ -25,7 +24,8 @@
 
     <main>
         <article class="content-card">
-            <img src="lucassnow.jpg" alt="Lucas Snow">
+            <!-- ACCESSIBILITY (Visual Impairment): Detailed alt text for screen readers -->
+            <img src="lucassnow.jpg" alt="Lucas Snow skiing down a sunny mountain slope overlooking a snowy valley and lake">
 
             <p>Lucas Snow, our founder, is a snow sports enthusiast who created our company: Snow Trails Travel Agency.</p>
 
@@ -34,8 +34,16 @@
                 for winter sports, for example <strong>snowboarding</strong> and <strong>skiing</strong>.
             </p>
 
-            <img src="tours.jpg" alt="A winter sports tour">
+            <!-- ACCESSIBILITY (Visual Impairment): Detailed alt text for screen readers -->
+            <img src="tours.jpg" alt="Four winter sports enthusiasts walking together in the snow carrying skis and snowboards">
         </article>
     </main>
+
+    <!-- ACCESSIBILITY (Autism/Neurodiverse): Matching footer for a consistent layout -->
+    <footer>
+        <p>For more information, please visit our
+            <a href="https://WinterResorts.com">WinterResorts.com ski resort guide</a>.
+        </p>
+    </footer>
 </body>
 </html>

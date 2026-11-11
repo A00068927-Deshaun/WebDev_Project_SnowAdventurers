@@ -6,7 +6,10 @@
 body {
     margin: 0;
     color: #17324d;
-    font-family: 'Quantico', sans-serif;
+    /* ACCESSIBILITY FEATURE 1: Simple, easy-to-read sans-serif font for dyslexia */
+    font-family: Arial, Verdana, sans-serif;
+    /* ACCESSIBILITY FEATURE 2: Larger base font size (16px or more) */
+    font-size: 18px;
     line-height: 1.6;
 }
 
@@ -14,8 +17,8 @@ body {
 .home-page {
     background-image:
         linear-gradient(
-            rgba(235, 247, 255, 0.72),
-            rgba(235, 247, 255, 0.82)
+            rgba(235, 247, 255, 0.85),
+            rgba(235, 247, 255, 0.90)
         ),
         url("resort.jpg");
 
@@ -45,13 +48,16 @@ body {
 .site-nav a {
     color: white;
     font-weight: bold;
-    text-decoration: none;
+    /* ACCESSIBILITY FEATURE 4: Underline links so colour isn't the only indicator */
+    text-decoration: underline;
 }
 
 /* TASK 1: Pseudo-class selector. */
-.site-nav a:hover {
+.site-nav a:hover,
+.site-nav a:focus {
     color: #ffe082;
-    text-decoration: underline;
+    outline: 2px solid #ffe082;
+    outline-offset: 4px;
 }
 
 /* TASK 2: CSS Box Model properties. */
@@ -62,7 +68,7 @@ body {
     padding: 20px;
     border: 3px solid #1769aa;
     border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.92);
+    background-color: rgba(255, 255, 255, 0.96);
     text-align: center;
 }
 
@@ -79,14 +85,15 @@ h1 {
     padding: 24px;
     border: 2px solid #b5d8ef;
     border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.94);
+    background-color: rgba(255, 255, 255, 0.96);
 }
 
 /* TASK 1: Descendant selector. */
 article p {
-    color: #24445e;
+    color: #17324d;
     margin: 12px 0;
-    text-align: justify;
+    /* ACCESSIBILITY FEATURE 3: Left-aligned text instead of justified text */
+    text-align: left;
 }
 
 /* Image styling */
@@ -114,10 +121,15 @@ footer p {
 
 footer a {
     color: white;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus {
     color: #ffe082;
+    outline: 2px solid #ffe082;
+    outline-offset: 4px;
 }
 
 /* Makes the website work better on smaller screens. */

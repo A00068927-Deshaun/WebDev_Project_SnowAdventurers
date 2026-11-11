@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snow Trails Travel Agency</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ACCESSIBILITY (Dyslexia): Removed decorative 'Quantico' font so the site uses clean sans-serif fonts -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="home-page">
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Main Navigation">
         <ul>
             <li><a href="WebDev_LucasSnow.html">Home</a></li>
             <li><a href="about.html">About our founder</a></li>
@@ -25,7 +23,8 @@
 
     <main>
         <article class="content-card">
-            <img src="resort.jpg" alt="A snowy mountain resort">
+            <!-- ACCESSIBILITY (Visual Impairment): Descriptive alt text for screen readers -->
+            <img src="resort.jpg" alt="A snowy mountain resort with ski slopes under a bright winter sky">
 
             <p>Look no further because we have the best winter travel destinations for you!</p>
 
@@ -38,8 +37,9 @@
     </main>
 
     <footer>
+        <!-- ACCESSIBILITY (Visual Impairment): Descriptive link text so screen readers know where the link leads -->
         <p>For more information, please visit our
-            <a href="https://WinterResorts.com">WinterResorts.com</a>.
+            <a href="https://WinterResorts.com">WinterResorts.com ski resort guide</a>.
         </p>
     </footer>
 </body>
