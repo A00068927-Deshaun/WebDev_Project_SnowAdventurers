@@ -6,14 +6,12 @@
 body {
     margin: 0;
     color: #17324d;
-    /* ACCESSIBILITY FEATURE 1: Simple, easy-to-read sans-serif font for dyslexia */
     font-family: Arial, Verdana, sans-serif;
-    /* ACCESSIBILITY FEATURE 2: Larger base font size (16px or more) */
     font-size: 18px;
     line-height: 1.6;
 }
 
-/* TASK 3: Background image on the homepage. */
+/* PERFORMANCE: Removed background-attachment: fixed to prevent scroll repaints */
 .home-page {
     background-image:
         linear-gradient(
@@ -25,7 +23,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     min-height: 100vh;
 }
 
@@ -44,15 +41,12 @@ body {
     padding: 0;
 }
 
-/* TASK 1: Class selector and descendant selector. */
 .site-nav a {
     color: white;
     font-weight: bold;
-    /* ACCESSIBILITY FEATURE 4: Underline links so colour isn't the only indicator */
     text-decoration: underline;
 }
 
-/* TASK 1: Pseudo-class selector. */
 .site-nav a:hover,
 .site-nav a:focus {
     color: #ffe082;
@@ -60,7 +54,6 @@ body {
     outline-offset: 4px;
 }
 
-/* TASK 2: CSS Box Model properties. */
 #welcome {
     width: 90%;
     min-height: 110px;
@@ -88,11 +81,9 @@ h1 {
     background-color: rgba(255, 255, 255, 0.96);
 }
 
-/* TASK 1: Descendant selector. */
 article p {
     color: #17324d;
     margin: 12px 0;
-    /* ACCESSIBILITY FEATURE 3: Left-aligned text instead of justified text */
     text-align: left;
 }
 

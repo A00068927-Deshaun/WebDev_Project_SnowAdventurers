@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snow Trails Travel Agency</title>
-
-    <!-- ACCESSIBILITY (Dyslexia): Removed decorative 'Quantico' font so the site uses clean sans-serif fonts -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,8 +21,8 @@
 
     <main>
         <article class="content-card">
-            <!-- ACCESSIBILITY (Visual Impairment): Descriptive alt text for screen readers -->
-            <img src="resort.jpg" alt="A snowy mountain resort with ski slopes under a bright winter sky">
+            <!-- PERFORMANCE: Explicit width/height prevents layout shift; fetchpriority="high" speeds up LCP -->
+            <img src="resort.jpg" alt="A snowy mountain resort with ski slopes under a bright winter sky" width="800" height="533" fetchpriority="high">
 
             <p>Look no further because we have the best winter travel destinations for you!</p>
 
@@ -37,7 +35,6 @@
     </main>
 
     <footer>
-        <!-- ACCESSIBILITY (Visual Impairment): Descriptive link text so screen readers know where the link leads -->
         <p>For more information, please visit our
             <a href="https://WinterResorts.com">WinterResorts.com ski resort guide</a>.
         </p>
